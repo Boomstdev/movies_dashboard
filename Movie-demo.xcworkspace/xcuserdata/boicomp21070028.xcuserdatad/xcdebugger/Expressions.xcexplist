@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.fetchFilms():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ViewController.fetchFilms():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.tableView(_:numberOfRowsInSection:):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CollectionViewCell.awakeFromNib():CollectionViewCell.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.tableView(_:cellForRowAt:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "list">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TableRotateViewCell.collectionView(_:numberOfItemsInSection:):TableRotateViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "movieItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

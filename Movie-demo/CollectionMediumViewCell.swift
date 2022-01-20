@@ -9,4 +9,13 @@ import UIKit
 
 class CollectionMediumViewCell: UICollectionViewCell {
     
+    static let indentify = "cellMedium"
+    
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var image: UIImageView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
 }

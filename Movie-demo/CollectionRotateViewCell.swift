@@ -7,9 +7,9 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class CollectionRotateViewCell: UICollectionViewCell {
     
-    static let indentify = "collectionRotateCell"
+    static let indentify = "cellBig"
 
     @IBOutlet weak var image: UIImageView!
     
