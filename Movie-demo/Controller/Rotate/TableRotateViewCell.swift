@@ -7,7 +7,12 @@
 
 import UIKit
 
+protocol TableRotateViewCellDelegate{
+    func onSelectItemCell(_ item:MovieItemModel)
+}
+
 class TableRotateViewCell: UITableViewCell {
+    var delegate: TableRotateViewCellDelegate?
     
     static let indentify = "tableRotateCell"
     
@@ -35,11 +40,11 @@ class TableRotateViewCell: UITableViewCell {
         layout.minimumLineSpacing = 0
         layout.scrollDirection = .horizontal
         
-//        collectionRotateView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: CollectionViewCell.indentify)
         collectionRotateView.dataSource = self
         collectionRotateView.delegate = self
         collectionRotateView.collectionViewLayout = layout
         collectionRotateView.isPagingEnabled = true
+        
        
         DispatchQueue.main.async {
             self.pageIndicator.numberOfPages = self.movieItem.count
@@ -56,6 +61,7 @@ class TableRotateViewCell: UITableViewCell {
 }
 
 extension TableRotateViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return movieItem.count
     }
@@ -63,19 +69,19 @@ extension TableRotateViewCell: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = movieItem[indexPath.row]
         
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.indentify, for: indexPath) as! CollectionViewCell
-//
-//        cell.image.load(url: item.imageUrl)
-        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellBig", for: indexPath) as! CollectionRotateViewCell
         cell.image.load(url: item.imageUrl)
         return cell
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: 300, height: 300)
-//
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        print(indexPath.row)
+        let item = movieItem[indexPath.row]
+        if let delegate = delegate {
+            delegate.onSelectItemCell(item)
+        }
+//        delegate?.onSelectItemCell(item)
+    }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width
@@ -83,3 +89,4 @@ extension TableRotateViewCell: UICollectionViewDelegate, UICollectionViewDataSou
     }
 
 }
+

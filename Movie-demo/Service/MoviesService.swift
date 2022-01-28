@@ -8,22 +8,25 @@
 import Foundation
 import Alamofire
 
+protocol MoviesServiceList{
+    func onSuccessMovieList(_ model: [MovieModel])
+}
+
 class MoviesService{
-    var list:[MovieModel] = []
+    var delegate: MoviesServiceList?
     func moviesList(){
         AF.request("https://jsonkeeper.com/b/9E54#").validate().responseJSON{ response in
             switch response.result{
             case .success(let data):
                 do {
+                    var list = [MovieModel]()
                     if let objJson = (data as? NSArray){
                         for element in objJson {
                             let item = element as! NSDictionary
-                            self.list.append(MovieModel(jsonDic: item))
+                            list.append(MovieModel(jsonDic: item))
                         }
                     }
-                    for item in self.list{
-                        print(item.movies[0].name)
-                    }
+                    self.delegate?.onSuccessMovieList(list)
                 } catch let error {
                     print("JSON DATA: \(error)")
                 }

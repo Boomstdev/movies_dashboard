@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol TableMediumViewCellDelegate{
+    func onSelectItemCell(_ item:MovieItemModel)
+}
+
 class TableMediumViewCell: UITableViewCell {
+    
+    var delegate: TableMediumViewCellDelegate?
     
     static let indentify = "tableMediumCell"
     
@@ -72,6 +78,13 @@ extension TableMediumViewCell: UICollectionViewDelegate, UICollectionViewDataSou
         cell.layer.cornerRadius = 5
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = movieItem[indexPath.row]
+        if let delegate = delegate {
+            delegate.onSelectItemCell(item)
+        }
     }
     
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

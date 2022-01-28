@@ -19,10 +19,13 @@
 		C13AA9232796ACEE00C3E750 /* TableMediumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13AA9222796ACEE00C3E750 /* TableMediumViewCell.swift */; };
 		C13AA9252796AF0C00C3E750 /* CollectionMediumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13AA9242796AF0C00C3E750 /* CollectionMediumViewCell.swift */; };
 		C141F31E27912C91007CC16D /* TableRotateViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C141F31C27912C91007CC16D /* TableRotateViewCell.swift */; };
-		C141F32527915C84007CC16D /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C141F32427915C84007CC16D /* helper.swift */; };
+		C141F32527915C84007CC16D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C141F32427915C84007CC16D /* Utils.swift */; };
 		C141F3282791688B007CC16D /* CollectionRotateViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C141F3262791688B007CC16D /* CollectionRotateViewCell.swift */; };
+		C15072FA279FFBB900B5ECA3 /* ViewDetailPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15072F9279FFBB900B5ECA3 /* ViewDetailPageController.swift */; };
 		C152D4F72797FD9E00F44A47 /* TableSmallViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C152D4F62797FD9E00F44A47 /* TableSmallViewCell.swift */; };
 		C152D4F92797FDBB00F44A47 /* CollectionSmallViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C152D4F82797FDBB00F44A47 /* CollectionSmallViewCell.swift */; };
+		C1DDC0D727A3C8F70037486B /* TableLanguageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDC0D627A3C8F70037486B /* TableLanguageViewCell.swift */; };
+		C1DDC0D927A3C9080037486B /* TableTypeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DDC0D827A3C9080037486B /* TableTypeViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,10 +45,13 @@
 		C13AA9222796ACEE00C3E750 /* TableMediumViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMediumViewCell.swift; sourceTree = "<group>"; };
 		C13AA9242796AF0C00C3E750 /* CollectionMediumViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMediumViewCell.swift; sourceTree = "<group>"; };
 		C141F31C27912C91007CC16D /* TableRotateViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRotateViewCell.swift; sourceTree = "<group>"; };
-		C141F32427915C84007CC16D /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
+		C141F32427915C84007CC16D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C141F3262791688B007CC16D /* CollectionRotateViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRotateViewCell.swift; sourceTree = "<group>"; };
+		C15072F9279FFBB900B5ECA3 /* ViewDetailPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDetailPageController.swift; sourceTree = "<group>"; };
 		C152D4F62797FD9E00F44A47 /* TableSmallViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSmallViewCell.swift; sourceTree = "<group>"; };
 		C152D4F82797FDBB00F44A47 /* CollectionSmallViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSmallViewCell.swift; sourceTree = "<group>"; };
+		C1DDC0D627A3C8F70037486B /* TableLanguageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLanguageViewCell.swift; sourceTree = "<group>"; };
+		C1DDC0D827A3C9080037486B /* TableTypeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTypeViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,24 +103,99 @@
 		C11651E0278EE96C00793ACD /* Movie-demo */ = {
 			isa = PBXGroup;
 			children = (
-				C11651E1278EE96C00793ACD /* AppDelegate.swift */,
-				C11651E3278EE96C00793ACD /* SceneDelegate.swift */,
-				C11651E5278EE96C00793ACD /* ViewController.swift */,
-				C141F31C27912C91007CC16D /* TableRotateViewCell.swift */,
-				C141F3262791688B007CC16D /* CollectionRotateViewCell.swift */,
-				C13AA9222796ACEE00C3E750 /* TableMediumViewCell.swift */,
-				C13AA9242796AF0C00C3E750 /* CollectionMediumViewCell.swift */,
-				C152D4F62797FD9E00F44A47 /* TableSmallViewCell.swift */,
-				C152D4F82797FDBB00F44A47 /* CollectionSmallViewCell.swift */,
-				C141F32427915C84007CC16D /* helper.swift */,
-				C11651E7278EE96C00793ACD /* Main.storyboard */,
+				C15072F5279FEDF900B5ECA3 /* Application */,
+				C1E02F07279E8E1F00342227 /* Models */,
+				C15072EF279FE54B00B5ECA3 /* View */,
+				C15072F0279FE55600B5ECA3 /* Controller */,
+				C15072F1279FEBD400B5ECA3 /* Util */,
 				C106E79527901DF20055353A /* Service */,
-				C106E793278FC79F0055353A /* MovieModel.swift */,
 				C11651EA278EE96D00793ACD /* Assets.xcassets */,
 				C11651EC278EE96D00793ACD /* LaunchScreen.storyboard */,
 				C11651EF278EE96D00793ACD /* Info.plist */,
 			);
 			path = "Movie-demo";
+			sourceTree = "<group>";
+		};
+		C15072EF279FE54B00B5ECA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C11651E7278EE96C00793ACD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C15072F0279FE55600B5ECA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C15072F8279FFB8800B5ECA3 /* DetailPage */,
+				C15072F2279FED8E00B5ECA3 /* Rotate */,
+				C15072F3279FEDAA00B5ECA3 /* Medium */,
+				C15072F4279FEDB600B5ECA3 /* Small */,
+				C11651E5278EE96C00793ACD /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C15072F1279FEBD400B5ECA3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C141F32427915C84007CC16D /* Utils.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C15072F2279FED8E00B5ECA3 /* Rotate */ = {
+			isa = PBXGroup;
+			children = (
+				C141F31C27912C91007CC16D /* TableRotateViewCell.swift */,
+				C141F3262791688B007CC16D /* CollectionRotateViewCell.swift */,
+			);
+			path = Rotate;
+			sourceTree = "<group>";
+		};
+		C15072F3279FEDAA00B5ECA3 /* Medium */ = {
+			isa = PBXGroup;
+			children = (
+				C13AA9222796ACEE00C3E750 /* TableMediumViewCell.swift */,
+				C13AA9242796AF0C00C3E750 /* CollectionMediumViewCell.swift */,
+			);
+			path = Medium;
+			sourceTree = "<group>";
+		};
+		C15072F4279FEDB600B5ECA3 /* Small */ = {
+			isa = PBXGroup;
+			children = (
+				C152D4F62797FD9E00F44A47 /* TableSmallViewCell.swift */,
+				C152D4F82797FDBB00F44A47 /* CollectionSmallViewCell.swift */,
+			);
+			path = Small;
+			sourceTree = "<group>";
+		};
+		C15072F5279FEDF900B5ECA3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C11651E1278EE96C00793ACD /* AppDelegate.swift */,
+				C11651E3278EE96C00793ACD /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C15072F8279FFB8800B5ECA3 /* DetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				C15072F9279FFBB900B5ECA3 /* ViewDetailPageController.swift */,
+				C1DDC0D627A3C8F70037486B /* TableLanguageViewCell.swift */,
+				C1DDC0D827A3C9080037486B /* TableTypeViewCell.swift */,
+			);
+			path = DetailPage;
+			sourceTree = "<group>";
+		};
+		C1E02F07279E8E1F00342227 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C106E793278FC79F0055353A /* MovieModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		DA401D7DCC481E1A1487CF5F /* Pods */ = {
@@ -250,9 +331,12 @@
 				C11651E2278EE96C00793ACD /* AppDelegate.swift in Sources */,
 				C152D4F72797FD9E00F44A47 /* TableSmallViewCell.swift in Sources */,
 				C152D4F92797FDBB00F44A47 /* CollectionSmallViewCell.swift in Sources */,
+				C1DDC0D727A3C8F70037486B /* TableLanguageViewCell.swift in Sources */,
+				C1DDC0D927A3C9080037486B /* TableTypeViewCell.swift in Sources */,
 				C13AA9252796AF0C00C3E750 /* CollectionMediumViewCell.swift in Sources */,
+				C15072FA279FFBB900B5ECA3 /* ViewDetailPageController.swift in Sources */,
 				C11651E4278EE96C00793ACD /* SceneDelegate.swift in Sources */,
-				C141F32527915C84007CC16D /* helper.swift in Sources */,
+				C141F32527915C84007CC16D /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

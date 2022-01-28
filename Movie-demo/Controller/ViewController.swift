@@ -8,7 +8,7 @@
 import UIKit
 import Alamofire
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MoviesServiceList {
     
     @IBOutlet var tableView: UITableView!
     
@@ -16,54 +16,28 @@ class ViewController: UIViewController {
     var screenWidth: CGFloat!
     var screenHeight: CGFloat!
     var list = [MovieModel]()
+    var service = MoviesService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         self.navigationItem.title = "Dashboard"
-        fetchFilms()
+        service.delegate = self
         screenSize = UIScreen.main.bounds
         screenWidth = screenSize.width
         screenHeight = screenSize.height
         
-//        tableView.register(UINib(nibName: "TableRotateViewCell", bundle: nil), forCellReuseIdentifier: TableRotateViewCell.indentify)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.delegate = self
         tableView.dataSource = self
-       
+        service.moviesList()
     }
     
-    func fetchFilms() {
-        // 1
-        AF.request("https://jsonkeeper.com/b/9E54#").validate().responseJSON{ response in
-            switch response.result{
-            case .success(let data):
-               var itemList = [MovieModel]()
-                do {
-                    if let objJson = (data as? NSArray){
-                        for element in objJson {
-                            let item = element as! NSDictionary
-                            itemList.append(MovieModel(jsonDic: item))
-                        }
-                    }
-                    DispatchQueue.main.async {
-                        self.list = itemList
-                        self.tableView.reloadData()
-                    }
-                    
-                    for item in self.list{
-                        print(item.movies[0].imageUrl)
-                    }
-                } catch let error {
-                    print("JSON DATA: \(error)")
-                }
-            case .failure(let error):
-                print(error)
-                return
-            }
+    func onSuccessMovieList(_ model: [MovieModel]) {
+        DispatchQueue.main.async {
+            self.list = model
+            self.tableView.reloadData()
         }
     }
-    
-    
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
@@ -76,31 +50,28 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         
         if(item.type == "rotate"){
             let cell = tableView.dequeueReusableCell(withIdentifier: TableRotateViewCell.indentify, for: indexPath) as? TableRotateViewCell
-//            cell?.typeText.text = item.type
-            
             cell!.movieItem = item.movies
             cell!.selectionStyle = .none
-            cell?.collectionRotateView.reloadData()
+//            cell?.collectionRotateView.reloadData()
+            cell?.delegate = self
             return cell!
         
         }else if(item.type == "title" && item.size == "medium"){
             let cell = tableView.dequeueReusableCell(withIdentifier: TableMediumViewCell.indentify, for: indexPath) as? TableMediumViewCell
-//            cell?.typeText.text = item.type
-
             cell!.movieItem = item.movies
             cell!.title.text = item.title
             cell!.selectionStyle = .none
-//            cell?.collectionRotateView.reloadData()
+            cell?.delegate = self
             return cell!
+            
         }else if(item.type == "title" && item.size == "small"){
             let cell = tableView.dequeueReusableCell(withIdentifier: TableSmallViewCell.indentify, for: indexPath) as? TableSmallViewCell
-//            cell?.typeText.text = item.type
-
             cell!.movieItem = item.movies
             cell!.title.text = item.title
             cell!.selectionStyle = .none
-//            cell?.collectionRotateView.reloadData()
+            cell?.delegate = self
             return cell!
+            
         }
         return UITableViewCell()
     }
@@ -116,7 +87,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
             return hight
         }
         return width * 2/3
-//        return getCellHeight(indexPath: indexPath)
     }
     
     func getCellHeight(indexPath: IndexPath) -> CGFloat {
@@ -125,3 +95,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     
 }
 
+extension ViewController: TableRotateViewCellDelegate, TableMediumViewCellDelegate, TableSmallViewCellDelegate{
+    func onSelectItemCell(_ item: MovieItemModel) {
+        print(item.title)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "scene_detail") as! ViewDetailPageController
+        vc.item = item
+        navigationController?.pushViewController(vc , animated: true)
+    }
+}

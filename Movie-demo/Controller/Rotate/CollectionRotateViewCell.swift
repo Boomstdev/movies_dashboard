@@ -12,10 +12,12 @@ class CollectionRotateViewCell: UICollectionViewCell {
     static let indentify = "cellBig"
 
     @IBOutlet weak var image: UIImageView!
+    var controller = UICollectionViewCell()
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        controller = self
     }
 
 }

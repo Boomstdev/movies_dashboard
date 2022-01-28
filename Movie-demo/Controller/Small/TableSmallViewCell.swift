@@ -7,8 +7,13 @@
 
 import UIKit
 
+protocol TableSmallViewCellDelegate{
+    func onSelectItemCell(_ item:MovieItemModel)
+}
+
 class TableSmallViewCell: UITableViewCell {
     
+    var delegate:TableSmallViewCellDelegate?
     
     static let indentify = "tableSmallCell"
     
@@ -66,6 +71,13 @@ extension TableSmallViewCell: UICollectionViewDelegate, UICollectionViewDataSour
         cell.layer.borderColor = UIColor.gray.cgColor
         cell.layer.cornerRadius = 5
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = movieItem[indexPath.row]
+        if let delegate = delegate {
+            delegate.onSelectItemCell(item)
+        }
     }
     
     
