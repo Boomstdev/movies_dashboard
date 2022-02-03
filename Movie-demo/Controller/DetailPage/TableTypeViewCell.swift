@@ -11,6 +11,7 @@ class TableTypeViewCell: UITableViewCell {
     
     static let indentify = "cellType"
     
+    @IBOutlet weak var lblText: UILabel!
     var typeList:[String]?
 
     override func awakeFromNib() {

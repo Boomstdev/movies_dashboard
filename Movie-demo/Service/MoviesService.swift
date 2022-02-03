@@ -15,14 +15,15 @@ protocol MoviesServiceList{
 class MoviesService{
     var delegate: MoviesServiceList?
     func moviesList(){
-        AF.request("https://jsonkeeper.com/b/9E54#").validate().responseJSON{ response in
+        AF.request("https://jsonkeeper.com/b/0GQ8").validate().responseJSON{ response in
             switch response.result{
             case .success(let data):
+                print(data)
                 do {
                     var list = [MovieModel]()
-                    if let objJson = (data as? NSArray){
+                    if let objJson = (data as? Array<AnyObject>){
                         for element in objJson {
-                            let item = element as! NSDictionary
+                            let item = element as! Dictionary<String, Any>
                             list.append(MovieModel(jsonDic: item))
                         }
                     }

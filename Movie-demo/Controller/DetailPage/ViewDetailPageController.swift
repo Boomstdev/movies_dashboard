@@ -19,6 +19,14 @@ class ViewDetailPageController: UIViewController {
         super.viewDidLoad()
         tableDetail.delegate = self
         tableDetail.dataSource = self
+        
+        if item.trailer != nil{
+            listCell.append("trailer")
+        }
+        if item.more != nil{
+            listCell.append("more")
+        }
+        tableDetail.reloadData()
     }
 
 }
@@ -58,12 +66,39 @@ extension ViewDetailPageController: UITableViewDataSource, UITableViewDelegate {
         }else if indentify == "type"{
             let cell = tableDetail.dequeueReusableCell(withIdentifier: TableTypeViewCell.indentify, for: indexPath) as! TableTypeViewCell
             cell.typeList = item.category
-            let lblType = cell.viewWithTag(10) as! UILabel
             var string = ""
             for x in item.category {
                 string += x + "\r\n"
             }
-            lblType.text = string
+            cell.lblText.text = string
+            return cell
+        }else if indentify == "trailer"{
+            let cell = tableDetail.dequeueReusableCell(withIdentifier: "cellTrailer", for: indexPath)
+            let title = cell.viewWithTag(10) as! UILabel
+            title.text = "Traillers"
+            let image = cell.viewWithTag(11) as! UIImageView
+            if let trailer = item.trailer{
+                image.load(url: trailer.imageUrl)
+            }
+            let lblText = cell.viewWithTag(12) as! UILabel
+            lblText.text = item.name
+            lblText.layer.borderWidth = 1
+            lblText.layer.borderColor = UIColor.gray.cgColor
+            lblText.layer.cornerRadius = 5
+            let viewLaout = cell.viewWithTag(13)
+            viewLaout?.layer.borderWidth = 1
+            viewLaout?.layer.borderColor = UIColor.gray.cgColor
+            viewLaout?.layer.cornerRadius = 5
+            return cell
+        }else if indentify == "more"{
+            let cell = tableDetail.dequeueReusableCell(withIdentifier: "cellMore", for: indexPath) as! TableSmallViewCell
+            if let movieList = item.more{
+                cell.movieItem = movieList.movies
+            }
+            cell.collectionSmallView.reloadData()
+            cell.title.text = "More Like This"
+            cell.selectionStyle = .none
+//            cell.delegate = self
             return cell
         }
         return UITableViewCell()
@@ -82,6 +117,22 @@ extension ViewDetailPageController: UITableViewDataSource, UITableViewDelegate {
         return "Unknow"
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let indentify = listCell[indexPath.row]
+        let width = UIScreen.main.bounds.width
+        let hight = UIScreen.main.bounds.height / 3.5
+//        let item:MovieModel = list[indexPath.row]
+        
+        if indentify == "more"{
+            return hight
+        }
+        
+        return getCellHeight(indexPath: indexPath)
+    }
+    
+    func getCellHeight(indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
     
     
 }

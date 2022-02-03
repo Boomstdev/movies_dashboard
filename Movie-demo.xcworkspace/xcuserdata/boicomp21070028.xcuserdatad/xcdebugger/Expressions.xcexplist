@@ -6,13 +6,35 @@
          contextName = "ViewController.fetchFilms():ViewController.swift">
       </ContextState>
       <ContextState
+         contextName = "TableSmallViewCell.collectionView(_:numberOfItemsInSection:):TableSmallViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "movieItem.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in ViewController.fetchFilms():ViewController.swift">
       </ContextState>
       <ContextState
          contextName = "ViewController.tableView(_:numberOfRowsInSection:):ViewController.swift">
       </ContextState>
       <ContextState
+         contextName = "MovieItemModel.init(jsonDic:):MovieModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "jsonDic[&quot;more&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "CollectionViewCell.awakeFromNib():CollectionViewCell.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewDetailPageController.tableView(_:cellForRowAt:):ViewDetailPageController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad():ViewController.swift">
       </ContextState>
       <ContextState
          contextName = "ViewController.tableView(_:cellForRowAt:):ViewController.swift">
@@ -21,9 +43,6 @@
                value = "list">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ViewController.viewDidLoad():ViewController.swift">
       </ContextState>
       <ContextState
          contextName = "TableRotateViewCell.collectionView(_:numberOfItemsInSection:):TableRotateViewCell.swift">
