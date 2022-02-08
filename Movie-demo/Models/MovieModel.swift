@@ -40,6 +40,7 @@ struct MovieItemModel {
     var startDate: String?
     var trailer: TrailerModel?
     var more: MoreModel?
+    var imageUrls = [String]()
 
     init(jsonDic: Dictionary<String, Any>){
         self.title = jsonDic["title"] as? String ?? ""
@@ -74,6 +75,15 @@ struct MovieItemModel {
        
         if let dictMore = jsonDic["more"] as? Dictionary<String, Any> {
             self.more = MoreModel(jsonDict: dictMore)
+        }
+        var imageTemp:[String] = []
+        if jsonDic["imageUrls"] != nil {
+            let data = (jsonDic["imageUrls"] as? Array<AnyObject>)
+            for element in data! {
+                let item = element as! String
+                imageTemp.append(item)
+            }
+            self.imageUrls = imageTemp
         }
      }
 }

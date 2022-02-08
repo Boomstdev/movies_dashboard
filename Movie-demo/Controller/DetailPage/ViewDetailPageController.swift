@@ -19,7 +19,7 @@ class ViewDetailPageController: UIViewController {
         super.viewDidLoad()
         tableDetail.delegate = self
         tableDetail.dataSource = self
-        
+        self.title = item.title
         if item.trailer != nil{
             listCell.append("trailer")
         }
@@ -40,9 +40,19 @@ extension ViewDetailPageController: UITableViewDataSource, UITableViewDelegate {
         let indentify = listCell[indexPath.row]
         
         if indentify == "image"{
-            let cell = tableDetail.dequeueReusableCell(withIdentifier: "cellImage", for: indexPath)
-            let image = cell.viewWithTag(10) as! UIImageView
-            image.load(url: item.imageUrl)
+            let cell = tableDetail.dequeueReusableCell(withIdentifier: "cellImage", for: indexPath) as! TableRotateViewCell
+            if item.imageUrls != []{
+                var imageArray = [MovieItemModel]()
+                for element in item.imageUrls {
+                    imageArray.append(MovieItemModel(jsonDic: ["imageUrl": element]))
+                }
+                cell.movieItem = imageArray
+            }else{
+                var imageArray = [MovieItemModel]()
+                imageArray.append(MovieItemModel(jsonDic: ["imageUrl": item.imageUrl]))
+                cell.movieItem = imageArray
+            }
+            
             cell.selectionStyle = .none
             return cell
         }else if indentify == "language"{
@@ -62,10 +72,12 @@ extension ViewDetailPageController: UITableViewDataSource, UITableViewDelegate {
             let cell = tableDetail.dequeueReusableCell(withIdentifier: "cellDetail", for: indexPath)
             let lblDetail = cell.viewWithTag(11) as! UILabel
             lblDetail.text = item.description
+            cell.selectionStyle = .none
             return cell
         }else if indentify == "type"{
             let cell = tableDetail.dequeueReusableCell(withIdentifier: TableTypeViewCell.indentify, for: indexPath) as! TableTypeViewCell
             cell.typeList = item.category
+            cell.selectionStyle = .none
             var string = ""
             for x in item.category {
                 string += x + "\r\n"
@@ -89,6 +101,8 @@ extension ViewDetailPageController: UITableViewDataSource, UITableViewDelegate {
             viewLaout?.layer.borderWidth = 1
             viewLaout?.layer.borderColor = UIColor.gray.cgColor
             viewLaout?.layer.cornerRadius = 5
+            cell.selectionStyle = .none
+            
             return cell
         }else if indentify == "more"{
             let cell = tableDetail.dequeueReusableCell(withIdentifier: "cellMore", for: indexPath) as! TableSmallViewCell
@@ -98,7 +112,7 @@ extension ViewDetailPageController: UITableViewDataSource, UITableViewDelegate {
             cell.collectionSmallView.reloadData()
             cell.title.text = "More Like This"
             cell.selectionStyle = .none
-//            cell.delegate = self
+            cell.delegate = self
             return cell
         }
         return UITableViewCell()
@@ -125,6 +139,8 @@ extension ViewDetailPageController: UITableViewDataSource, UITableViewDelegate {
         
         if indentify == "more"{
             return hight
+        } else if indentify == "image"{
+            return width * 2/3
         }
         
         return getCellHeight(indexPath: indexPath)
@@ -134,5 +150,24 @@ extension ViewDetailPageController: UITableViewDataSource, UITableViewDelegate {
         return UITableView.automaticDimension
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let indentify = listCell[indexPath.row]
+        if indentify == "trailer" {
+            if let url = NSURL(string: item.trailer!.videoUrl){
+                UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+            }
+        }
+    }
     
+    
+}
+
+extension ViewDetailPageController: TableSmallViewCellDelegate{
+    func onSelectItemCell(_ item: MovieItemModel) {
+        print(item.title)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "scene_detail") as! ViewDetailPageController
+        vc.item = item
+        navigationController?.pushViewController(vc , animated: true)
+    }
 }

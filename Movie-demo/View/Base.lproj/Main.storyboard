@@ -121,7 +121,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="241"/>
                                                     <subviews>
                                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8pl-IE-9z6">
-                                                            <rect key="frame" x="0.0" y="30.5" width="414" height="210.5"/>
+                                                            <rect key="frame" x="0.0" y="20.5" width="414" height="220.5"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DTa-tG-xez">
                                                                 <size key="itemSize" width="166" height="220"/>
@@ -141,7 +141,7 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="166" height="220"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2Z-TZ-URW" customClass="PaddingLabel" customModule="Movie_demo" customModuleProvider="target">
-                                                                                        <rect key="frame" x="0.0" y="189.5" width="166" height="30.5"/>
+                                                                                        <rect key="frame" x="0.0" y="199.5" width="166" height="20.5"/>
                                                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -161,7 +161,7 @@
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZaP-Hu-Zx6">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="189.5"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="199.5"/>
                                                                                     </imageView>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -192,7 +192,7 @@
                                                             </cells>
                                                         </collectionView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH0-8b-Yaz" customClass="PaddingLabel" customModule="Movie_demo" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="30.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" systemColor="linkColor"/>
                                                             <nil key="highlightedColor"/>
@@ -248,7 +248,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="241"/>
                                                     <subviews>
                                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XPj-sV-YV6">
-                                                            <rect key="frame" x="0.0" y="30.5" width="414" height="210.5"/>
+                                                            <rect key="frame" x="0.0" y="20.5" width="414" height="220.5"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2HH-b4-cS0">
                                                                 <size key="itemSize" width="173" height="160"/>
@@ -268,7 +268,7 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="173" height="160"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5M-9h-Ylu" customClass="PaddingLabel" customModule="Movie_demo" customModuleProvider="target">
-                                                                                        <rect key="frame" x="0.0" y="129.5" width="173" height="30.5"/>
+                                                                                        <rect key="frame" x="0.0" y="139.5" width="173" height="20.5"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -288,7 +288,7 @@
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xuw-9f-OZR">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="173" height="129.5"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="173" height="139.5"/>
                                                                                     </imageView>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -319,7 +319,7 @@
                                                             </cells>
                                                         </collectionView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1A3-JQ-0PM" customClass="PaddingLabel" customModule="Movie_demo" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="30.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" systemColor="linkColor"/>
                                                             <nil key="highlightedColor"/>
@@ -397,40 +397,97 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellImage" rowHeight="238" id="OKw-71-cIL">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="238"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellImage" rowHeight="241" id="4LM-Ya-Alh" customClass="TableRotateViewCell" customModule="Movie_demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="241"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OKw-71-cIL" id="hKh-R7-tiQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="238"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4LM-Ya-Alh" id="wqB-mN-1Ql">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="241"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qfd-wy-9lF">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="238"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCD-Ak-juH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="241"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9cJ-Gd-8J6">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="238"/>
-                                                        </imageView>
+                                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lRz-Ie-kbO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="241"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FdM-LF-2pl">
+                                                                <size key="itemSize" width="128" height="128"/>
+                                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            </collectionViewFlowLayout>
+                                                            <cells>
+                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="cellBig" translatesAutoresizingMaskIntoConstraints="NO" id="wdO-pB-6Xa" customClass="CollectionRotateViewCell" customModule="Movie_demo" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="85.5"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BJH-sn-f11">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="85.5"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejq-gY-Pal">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="85.5"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gIa-Ac-pws">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="85.5"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" secondItem="gIa-Ac-pws" secondAttribute="height" multiplier="3:2" id="gGA-bJ-TZy"/>
+                                                                                        </constraints>
+                                                                                    </imageView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="bottom" secondItem="gIa-Ac-pws" secondAttribute="bottom" id="SHx-6X-1K3"/>
+                                                                                    <constraint firstItem="gIa-Ac-pws" firstAttribute="top" secondItem="ejq-gY-Pal" secondAttribute="top" id="Zca-vC-3VV"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="gIa-Ac-pws" secondAttribute="trailing" id="kTe-30-rz0"/>
+                                                                                    <constraint firstItem="gIa-Ac-pws" firstAttribute="leading" secondItem="ejq-gY-Pal" secondAttribute="leading" id="rTm-dC-JFY"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="bottom" secondItem="ejq-gY-Pal" secondAttribute="bottom" id="BBn-xU-LAB"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="ejq-gY-Pal" secondAttribute="trailing" id="CIx-hQ-jUc"/>
+                                                                            <constraint firstItem="ejq-gY-Pal" firstAttribute="leading" secondItem="BJH-sn-f11" secondAttribute="leading" id="MBk-Wz-DFc"/>
+                                                                            <constraint firstItem="ejq-gY-Pal" firstAttribute="top" secondItem="BJH-sn-f11" secondAttribute="top" id="gEN-qQ-PMF"/>
+                                                                        </constraints>
+                                                                    </collectionViewCellContentView>
+                                                                    <connections>
+                                                                        <outlet property="image" destination="gIa-Ac-pws" id="QAi-B4-1i4"/>
+                                                                    </connections>
+                                                                </collectionViewCell>
+                                                            </cells>
+                                                        </collectionView>
+                                                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="TF3-dw-nGV">
+                                                            <rect key="frame" x="0.0" y="195" width="414" height="26"/>
+                                                            <color key="pageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="currentPageIndicatorTintColor" systemColor="systemGray2Color"/>
+                                                        </pageControl>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="9cJ-Gd-8J6" secondAttribute="bottom" id="IOD-DA-ZjL"/>
-                                                        <constraint firstAttribute="trailing" secondItem="9cJ-Gd-8J6" secondAttribute="trailing" id="Jff-a3-Pod"/>
-                                                        <constraint firstAttribute="width" secondItem="Qfd-wy-9lF" secondAttribute="height" multiplier="16:9" id="NAE-4J-MMm"/>
-                                                        <constraint firstItem="9cJ-Gd-8J6" firstAttribute="top" secondItem="Qfd-wy-9lF" secondAttribute="top" id="UD5-h8-scp"/>
-                                                        <constraint firstItem="9cJ-Gd-8J6" firstAttribute="leading" secondItem="Qfd-wy-9lF" secondAttribute="leading" id="Udu-3F-h4X"/>
+                                                        <constraint firstItem="lRz-Ie-kbO" firstAttribute="top" secondItem="XCD-Ak-juH" secondAttribute="top" id="8Gh-SD-zDJ"/>
+                                                        <constraint firstItem="lRz-Ie-kbO" firstAttribute="leading" secondItem="XCD-Ak-juH" secondAttribute="leading" id="HqA-tW-kjH"/>
+                                                        <constraint firstItem="TF3-dw-nGV" firstAttribute="leading" secondItem="XCD-Ak-juH" secondAttribute="leading" id="NcB-7b-LOc"/>
+                                                        <constraint firstAttribute="bottom" secondItem="TF3-dw-nGV" secondAttribute="bottom" constant="20" id="VLx-2P-3do"/>
+                                                        <constraint firstAttribute="bottom" secondItem="lRz-Ie-kbO" secondAttribute="bottom" id="XHI-1F-Swy"/>
+                                                        <constraint firstAttribute="trailing" secondItem="lRz-Ie-kbO" secondAttribute="trailing" id="bTv-rA-EgG"/>
+                                                        <constraint firstAttribute="trailing" secondItem="TF3-dw-nGV" secondAttribute="trailing" id="wCY-Pa-VcM"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Qfd-wy-9lF" secondAttribute="trailing" id="4qM-Lt-GLW"/>
-                                                <constraint firstItem="Qfd-wy-9lF" firstAttribute="leading" secondItem="hKh-R7-tiQ" secondAttribute="leading" id="Kwa-nM-0qp"/>
-                                                <constraint firstAttribute="bottom" secondItem="Qfd-wy-9lF" secondAttribute="bottom" id="ebH-Be-37J"/>
-                                                <constraint firstItem="Qfd-wy-9lF" firstAttribute="top" secondItem="hKh-R7-tiQ" secondAttribute="top" id="v7G-SQ-yRf"/>
+                                                <constraint firstItem="XCD-Ak-juH" firstAttribute="leading" secondItem="wqB-mN-1Ql" secondAttribute="leading" id="h1u-QZ-W2K"/>
+                                                <constraint firstAttribute="trailing" secondItem="XCD-Ak-juH" secondAttribute="trailing" id="hMI-fa-Icg"/>
+                                                <constraint firstAttribute="bottom" secondItem="XCD-Ak-juH" secondAttribute="bottom" id="q3r-e3-zG8"/>
+                                                <constraint firstItem="XCD-Ak-juH" firstAttribute="top" secondItem="wqB-mN-1Ql" secondAttribute="top" id="qmF-mF-dM6"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionRotateView" destination="lRz-Ie-kbO" id="Tna-xW-aAs"/>
+                                            <outlet property="pageIndicator" destination="TF3-dw-nGV" id="sEg-hm-doA"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellLanguage" rowHeight="63" id="cia-7O-iS6" customClass="TableLanguageViewCell" customModule="Movie_demo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="282.5" width="414" height="63"/>
+                                        <rect key="frame" x="0.0" y="285.5" width="414" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cia-7O-iS6" id="dUA-YO-iIF">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
@@ -520,7 +577,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellDate" id="UL3-OZ-MdL">
-                                        <rect key="frame" x="0.0" y="345.5" width="414" height="40.5"/>
+                                        <rect key="frame" x="0.0" y="348.5" width="414" height="40.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UL3-OZ-MdL" id="v49-6p-Mn8">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="40.5"/>
@@ -562,7 +619,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellDetail" rowHeight="100" id="XrU-Lu-VCJ">
-                                        <rect key="frame" x="0.0" y="386" width="414" height="100"/>
+                                        <rect key="frame" x="0.0" y="389" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XrU-Lu-VCJ" id="Cb7-rV-puC">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
@@ -605,7 +662,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellType" rowHeight="82" id="5Dv-Ho-9mo" customClass="TableTypeViewCell" customModule="Movie_demo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="486" width="414" height="82"/>
+                                        <rect key="frame" x="0.0" y="489" width="414" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Dv-Ho-9mo" id="tSb-gr-Pp4">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
@@ -650,7 +707,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellTrailer" rowHeight="223" id="mam-HN-PYs" customClass="TableTypeViewCell" customModule="Movie_demo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="568" width="414" height="223"/>
+                                        <rect key="frame" x="0.0" y="571" width="414" height="223"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mam-HN-PYs" id="tSH-Nm-fcD">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="223"/>
@@ -669,7 +726,7 @@
                                                             <rect key="frame" x="5" y="40.5" width="250" height="170"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEb-Sc-c7Q" customClass="PaddingLabel" customModule="Movie_demo" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="149" width="250" height="21"/>
+                                                                    <rect key="frame" x="0.0" y="149.5" width="250" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -689,7 +746,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IR2-OX-nPS">
-                                                                    <rect key="frame" x="5" y="0.0" width="240" height="149"/>
+                                                                    <rect key="frame" x="5" y="0.0" width="240" height="149.5"/>
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -707,7 +764,6 @@
                                                             </constraints>
                                                         </view>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="7bc-S0-YdL" secondAttribute="trailing" constant="10" id="27r-Tr-KI6"/>
                                                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="s27-Pz-v5m" secondAttribute="bottom" constant="10" id="LWC-cB-lYu"/>
@@ -727,7 +783,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellMore" rowHeight="241" id="ueI-jX-D6P" customClass="TableSmallViewCell" customModule="Movie_demo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="791" width="414" height="241"/>
+                                        <rect key="frame" x="0.0" y="794" width="414" height="241"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ueI-jX-D6P" id="iiu-Rt-53F">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="241"/>
@@ -737,7 +793,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="241"/>
                                                     <subviews>
                                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lnw-R0-tky">
-                                                            <rect key="frame" x="0.0" y="30.5" width="414" height="210.5"/>
+                                                            <rect key="frame" x="0.0" y="20.5" width="414" height="220.5"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7NB-Xl-OSj">
                                                                 <size key="itemSize" width="173" height="160"/>
@@ -757,7 +813,7 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="173" height="160"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aha-B6-y9I" customClass="PaddingLabel" customModule="Movie_demo" customModuleProvider="target">
-                                                                                        <rect key="frame" x="0.0" y="129.5" width="173" height="30.5"/>
+                                                                                        <rect key="frame" x="0.0" y="139.5" width="173" height="20.5"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -777,7 +833,7 @@
                                                                                         </userDefinedRuntimeAttributes>
                                                                                     </label>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GxY-qz-4kW">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="173" height="129.5"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="173" height="139.5"/>
                                                                                     </imageView>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -808,7 +864,7 @@
                                                             </cells>
                                                         </collectionView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YG6-ih-c3h" customClass="PaddingLabel" customModule="Movie_demo" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="30.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" systemColor="linkColor"/>
                                                             <nil key="highlightedColor"/>
@@ -895,22 +951,25 @@
     </scenes>
     <designables>
         <designable name="1A3-JQ-0PM">
-            <size key="intrinsicContentSize" width="62.5" height="30.5"/>
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
         </designable>
         <designable name="B2Z-TZ-URW">
-            <size key="intrinsicContentSize" width="51.5" height="30.5"/>
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
         </designable>
         <designable name="RH0-8b-Yaz">
-            <size key="intrinsicContentSize" width="62.5" height="30.5"/>
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
         </designable>
         <designable name="YG6-ih-c3h">
-            <size key="intrinsicContentSize" width="62.5" height="30.5"/>
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="aEb-Sc-c7Q">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
         </designable>
         <designable name="aha-B6-y9I">
-            <size key="intrinsicContentSize" width="51.5" height="30.5"/>
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
         </designable>
         <designable name="n5M-9h-Ylu">
-            <size key="intrinsicContentSize" width="51.5" height="30.5"/>
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
         </designable>
     </designables>
     <resources>
